@@ -4,12 +4,16 @@ A Hello World example in ExpressJS
 
 ## Installation
 
+```
 git clone ...
 npm install
+```
 
 ## Run
 
+```
 node server.js
+```
 
 ## License
 
