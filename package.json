@@ -1,0 +1,7 @@
+{
+  "name": "hello-express",
+  "description": "this is a demonstration of express ❤",
+  "dependencies": {
+    "express": "^4.0"
+  }
+}
