@@ -5,6 +5,10 @@
     "debowerify": "^0.7.0",
     "express": "^4.0"
   },
+  "scripts": {
+    "test": "mocha test/unit",
+    "start": "node server.js"
+  },
   "devDependencies": {
     "browserify": "^3.46.1",
     "chai": "^1.9.1",

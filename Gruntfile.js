@@ -1,7 +1,8 @@
+'use strict';
 module.exports = function(grunt) {
-  
+
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-  
+
   grunt.initConfig({
     jshint: {
       all: ['Gruntfile.js', 'server.js']
@@ -27,7 +28,7 @@ module.exports = function(grunt) {
         debug: true
       }
     },
-    
+
     express: {
       options: {
         // Override defaults here
@@ -59,9 +60,9 @@ module.exports = function(grunt) {
         }
       }
     }
-    
+
   });
-  
+
   grunt.registerTask('server', [ 'jshint', 'express:dev' ]);
   grunt.registerTask('test',['express:dev','casper']);
   grunt.registerTask('default', ['jshint', 'test']);
