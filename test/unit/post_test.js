@@ -1,3 +1,5 @@
+'use strict';
+
 var expect = require('chai').expect;
 var Post = require('../../lib/post');
 
@@ -11,7 +13,7 @@ describe('Post object tests', function() {
   describe ('constructor', function() {
     
     it ('post should be truthy (exists)', function() {
-      expect(post).to.be.ok;
+      expect(post).to.be.ok;  //jshint ignore:line
     });
     
     it ('post should have title property', function() {
